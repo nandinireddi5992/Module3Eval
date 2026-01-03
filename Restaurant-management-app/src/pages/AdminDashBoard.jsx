@@ -1,7 +1,6 @@
 // AdminDashboard.jsx
 import { useEffect, useState } from "react";
 import { getRestaurants } from "../utils/storageUtils.js";
-import {Navbar} from "../components/Navbar.jsx";
 
 export default function AdminDashboard() {
   const [data, setData] = useState([]);
