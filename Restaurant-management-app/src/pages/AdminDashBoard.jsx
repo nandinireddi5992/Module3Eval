@@ -1,8 +1,9 @@
 // AdminDashboard.jsx
 import { useEffect, useState } from "react";
 import { getRestaurants } from "../utils/storageUtils.js";
+import Navbar from "../components/Navbar.jsx";
 
-export default function AdminDashboard() {
+ function AdminDashboard() {
   const [data, setData] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [filterType, setFilterType] = useState("");
@@ -40,3 +41,4 @@ export default function AdminDashboard() {
     </div>
   );
 }
+export default AdminDashboard;
